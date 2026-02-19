@@ -34,6 +34,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          source: "examen2-frontend/dist/**"
-          target: "/var/www/examen2"
+          source: "examen2-frontend/dist/browser/*"
+          target: "/var/www/html/examen"
           rm: true
